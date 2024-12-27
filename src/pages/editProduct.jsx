@@ -1,4 +1,3 @@
-// components/EditProduct.js
 import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router";
 import {
@@ -8,7 +7,7 @@ import {
 import { toast } from "react-toastify";
 
 const EditProduct = () => {
-  const { id } = useParams(); // Get the product ID from the URL
+  const { id } = useParams();
   const navigate = useNavigate();
   const { data: product, isLoading } = useGetProductQuery(id);
   //   console.log(product);

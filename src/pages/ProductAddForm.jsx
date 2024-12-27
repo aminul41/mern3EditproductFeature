@@ -38,7 +38,7 @@ const AddProductForm = () => {
     );
 
     const result = await res.json();
-    console.log(result);
+    // console.log(result);
     setProduct({ ...product, image: result.secure_url });
   };
   // [api.reducerPath] : api.reducer
